@@ -1,0 +1,295 @@
+<html>
+<head>
+   <title>Puzzle</title>
+   <style>
+
+      /* Table */
+      table.grid { margin: 30px auto 30px 10px; font-size: inherit; border-collapse: collapse; background-color: #6b8a0f;}
+      table.grid th, table.grid td { padding: 3px 3px; border: 2px ridge #6b8a0f; }
+      table.grid th  { background-color: #e3eec4; }
+      table.grid td  { background-color: White; vertical-align:middle;  }
+      table.grid td.cell img { width: 50px; height: 50px; margin: auto auto; }
+      input.check { float:right; margin-left: 10px;}
+
+      /* HR */
+      hr { border-style: outset; border-color: #008080; background-color: #408080; height: 3px; }
+
+      h1 { font: italic 34px "Garamond"; margin: 3px; }
+
+   </style>
+</head>
+<body>
+<h1>Puzzle Cricket</h1>
+<hr/>
+<table class='grid'>
+   <tr>
+      <td class='cell'><img src='images/O.png'/></td>
+      <td class='cell'><img src='images/V.png'/></td>
+      <td class='cell'><img src='images/P.png'/></td>
+      <td class='cell'><img src='images/R.png'/></td>
+      <td class='cell'><img src='images/T.png'/></td>
+      <td class='cell'><img src='images/F.png'/></td>
+      <td class='cell'><img src='images/I.png'/></td>
+      <td class='cell'><img src='images/U.png'/></td>
+      <td class='cell'><img src='images/A.png'/></td>
+      <td class='cell'><img src='images/M.png'/></td>
+      <td class='cell'><img src='images/P.png'/></td>
+      <td class='cell'><img src='images/D.png'/></td>
+      <td class='cell'><img src='images/U.png'/></td>
+      <td class='cell'><img src='images/H.png'/></td>
+      <td class='cell'><img src='images/H.png'/></td>
+   </tr>
+   <tr>
+      <td class='cell'><img src='images/J.png'/></td>
+      <td class='cell'><img src='images/W.png'/></td>
+      <td class='cell'><img src='images/I.png'/></td>
+      <td class='cell'><img src='images/C.png'/></td>
+      <td class='cell'><img src='images/K.png'/></td>
+      <td class='cell'><img src='images/E.png'/></td>
+      <td class='cell'><img src='images/T.png'/></td>
+      <td class='cell'><img src='images/M.png'/></td>
+      <td class='cell'><img src='images/Q.png'/></td>
+      <td class='cell'><img src='images/G.png'/></td>
+      <td class='cell'><img src='images/A.png'/></td>
+      <td class='cell'><img src='images/B.png'/></td>
+      <td class='cell'><img src='images/W.png'/></td>
+      <td class='cell'><img src='images/T.png'/></td>
+      <td class='cell'><img src='images/K.png'/></td>
+   </tr>
+   <tr>
+      <td class='cell'><img src='images/S.png'/></td>
+      <td class='cell'><img src='images/V.png'/></td>
+      <td class='cell'><img src='images/F.png'/></td>
+      <td class='cell'><img src='images/V.png'/></td>
+      <td class='cell'><img src='images/G.png'/></td>
+      <td class='cell'><img src='images/I.png'/></td>
+      <td class='cell'><img src='images/X.png'/></td>
+      <td class='cell'><img src='images/P.png'/></td>
+      <td class='cell'><img src='images/M.png'/></td>
+      <td class='cell'><img src='images/O.png'/></td>
+      <td class='cell'><img src='images/O.png'/></td>
+      <td class='cell'><img src='images/I.png'/></td>
+      <td class='cell'><img src='images/B.png'/></td>
+      <td class='cell'><img src='images/A.png'/></td>
+      <td class='cell'><img src='images/W.png'/></td>
+   </tr>
+   <tr>
+      <td class='cell'><img src='images/X.png'/></td>
+      <td class='cell'><img src='images/U.png'/></td>
+      <td class='cell'><img src='images/G.png'/></td>
+      <td class='cell'><img src='images/H.png'/></td>
+      <td class='cell'><img src='images/B.png'/></td>
+      <td class='cell'><img src='images/D.png'/></td>
+      <td class='cell'><img src='images/S.png'/></td>
+      <td class='cell'><img src='images/I.png'/></td>
+      <td class='cell'><img src='images/E.png'/></td>
+      <td class='cell'><img src='images/R.png'/></td>
+      <td class='cell'><img src='images/N.png'/></td>
+      <td class='cell'><img src='images/O.png'/></td>
+      <td class='cell'><img src='images/W.png'/></td>
+      <td class='cell'><img src='images/H.png'/></td>
+      <td class='cell'><img src='images/Z.png'/></td>
+   </tr>
+   <tr>
+      <td class='cell'><img src='images/X.png'/></td>
+      <td class='cell'><img src='images/H.png'/></td>
+      <td class='cell'><img src='images/I.png'/></td>
+      <td class='cell'><img src='images/K.png'/></td>
+      <td class='cell'><img src='images/A.png'/></td>
+      <td class='cell'><img src='images/A.png'/></td>
+      <td class='cell'><img src='images/K.png'/></td>
+      <td class='cell'><img src='images/R.png'/></td>
+      <td class='cell'><img src='images/I.png'/></td>
+      <td class='cell'><img src='images/U.png'/></td>
+      <td class='cell'><img src='images/X.png'/></td>
+      <td class='cell'><img src='images/L.png'/></td>
+      <td class='cell'><img src='images/G.png'/></td>
+      <td class='cell'><img src='images/C.png'/></td>
+      <td class='cell'><img src='images/F.png'/></td>
+   </tr>
+   <tr>
+      <td class='cell'><img src='images/Z.png'/></td>
+      <td class='cell'><img src='images/I.png'/></td>
+      <td class='cell'><img src='images/T.png'/></td>
+      <td class='cell'><img src='images/O.png'/></td>
+      <td class='cell'><img src='images/C.png'/></td>
+      <td class='cell'><img src='images/V.png'/></td>
+      <td class='cell'><img src='images/S.png'/></td>
+      <td class='cell'><img src='images/E.png'/></td>
+      <td class='cell'><img src='images/X.png'/></td>
+      <td class='cell'><img src='images/I.png'/></td>
+      <td class='cell'><img src='images/W.png'/></td>
+      <td class='cell'><img src='images/Q.png'/></td>
+      <td class='cell'><img src='images/T.png'/></td>
+      <td class='cell'><img src='images/L.png'/></td>
+      <td class='cell'><img src='images/Z.png'/></td>
+   </tr>
+   <tr>
+      <td class='cell'><img src='images/L.png'/></td>
+      <td class='cell'><img src='images/X.png'/></td>
+      <td class='cell'><img src='images/J.png'/></td>
+      <td class='cell'><img src='images/U.png'/></td>
+      <td class='cell'><img src='images/B.png'/></td>
+      <td class='cell'><img src='images/H.png'/></td>
+      <td class='cell'><img src='images/I.png'/></td>
+      <td class='cell'><img src='images/O.png'/></td>
+      <td class='cell'><img src='images/H.png'/></td>
+      <td class='cell'><img src='images/B.png'/></td>
+      <td class='cell'><img src='images/L.png'/></td>
+      <td class='cell'><img src='images/O.png'/></td>
+      <td class='cell'><img src='images/T.png'/></td>
+      <td class='cell'><img src='images/X.png'/></td>
+      <td class='cell'><img src='images/Y.png'/></td>
+   </tr>
+   <tr>
+      <td class='cell'><img src='images/N.png'/></td>
+      <td class='cell'><img src='images/Y.png'/></td>
+      <td class='cell'><img src='images/M.png'/></td>
+      <td class='cell'><img src='images/T.png'/></td>
+      <td class='cell'><img src='images/A.png'/></td>
+      <td class='cell'><img src='images/N.png'/></td>
+      <td class='cell'><img src='images/X.png'/></td>
+      <td class='cell'><img src='images/W.png'/></td>
+      <td class='cell'><img src='images/I.png'/></td>
+      <td class='cell'><img src='images/W.png'/></td>
+      <td class='cell'><img src='images/X.png'/></td>
+      <td class='cell'><img src='images/R.png'/></td>
+      <td class='cell'><img src='images/J.png'/></td>
+      <td class='cell'><img src='images/V.png'/></td>
+      <td class='cell'><img src='images/T.png'/></td>
+   </tr>
+   <tr>
+      <td class='cell'><img src='images/Y.png'/></td>
+      <td class='cell'><img src='images/P.png'/></td>
+      <td class='cell'><img src='images/F.png'/></td>
+      <td class='cell'><img src='images/R.png'/></td>
+      <td class='cell'><img src='images/N.png'/></td>
+      <td class='cell'><img src='images/J.png'/></td>
+      <td class='cell'><img src='images/X.png'/></td>
+      <td class='cell'><img src='images/V.png'/></td>
+      <td class='cell'><img src='images/U.png'/></td>
+      <td class='cell'><img src='images/E.png'/></td>
+      <td class='cell'><img src='images/I.png'/></td>
+      <td class='cell'><img src='images/U.png'/></td>
+      <td class='cell'><img src='images/X.png'/></td>
+      <td class='cell'><img src='images/L.png'/></td>
+      <td class='cell'><img src='images/Y.png'/></td>
+   </tr>
+   <tr>
+      <td class='cell'><img src='images/D.png'/></td>
+      <td class='cell'><img src='images/B.png'/></td>
+      <td class='cell'><img src='images/A.png'/></td>
+      <td class='cell'><img src='images/L.png'/></td>
+      <td class='cell'><img src='images/X.png'/></td>
+      <td class='cell'><img src='images/R.png'/></td>
+      <td class='cell'><img src='images/U.png'/></td>
+      <td class='cell'><img src='images/N.png'/></td>
+      <td class='cell'><img src='images/H.png'/></td>
+      <td class='cell'><img src='images/F.png'/></td>
+      <td class='cell'><img src='images/B.png'/></td>
+      <td class='cell'><img src='images/D.png'/></td>
+      <td class='cell'><img src='images/R.png'/></td>
+      <td class='cell'><img src='images/A.png'/></td>
+      <td class='cell'><img src='images/O.png'/></td>
+   </tr>
+   <tr>
+      <td class='cell'><img src='images/N.png'/></td>
+      <td class='cell'><img src='images/W.png'/></td>
+      <td class='cell'><img src='images/U.png'/></td>
+      <td class='cell'><img src='images/Y.png'/></td>
+      <td class='cell'><img src='images/B.png'/></td>
+      <td class='cell'><img src='images/A.png'/></td>
+      <td class='cell'><img src='images/L.png'/></td>
+      <td class='cell'><img src='images/L.png'/></td>
+      <td class='cell'><img src='images/K.png'/></td>
+      <td class='cell'><img src='images/H.png'/></td>
+      <td class='cell'><img src='images/C.png'/></td>
+      <td class='cell'><img src='images/F.png'/></td>
+      <td class='cell'><img src='images/O.png'/></td>
+      <td class='cell'><img src='images/U.png'/></td>
+      <td class='cell'><img src='images/R.png'/></td>
+   </tr>
+   <tr>
+      <td class='cell'><img src='images/B.png'/></td>
+      <td class='cell'><img src='images/Y.png'/></td>
+      <td class='cell'><img src='images/K.png'/></td>
+      <td class='cell'><img src='images/O.png'/></td>
+      <td class='cell'><img src='images/N.png'/></td>
+      <td class='cell'><img src='images/Q.png'/></td>
+      <td class='cell'><img src='images/A.png'/></td>
+      <td class='cell'><img src='images/N.png'/></td>
+      <td class='cell'><img src='images/L.png'/></td>
+      <td class='cell'><img src='images/K.png'/></td>
+      <td class='cell'><img src='images/O.png'/></td>
+      <td class='cell'><img src='images/W.png'/></td>
+      <td class='cell'><img src='images/B.png'/></td>
+      <td class='cell'><img src='images/L.png'/></td>
+      <td class='cell'><img src='images/K.png'/></td>
+   </tr>
+   <tr>
+      <td class='cell'><img src='images/V.png'/></td>
+      <td class='cell'><img src='images/L.png'/></td>
+      <td class='cell'><img src='images/C.png'/></td>
+      <td class='cell'><img src='images/Y.png'/></td>
+      <td class='cell'><img src='images/O.png'/></td>
+      <td class='cell'><img src='images/K.png'/></td>
+      <td class='cell'><img src='images/K.png'/></td>
+      <td class='cell'><img src='images/Y.png'/></td>
+      <td class='cell'><img src='images/O.png'/></td>
+      <td class='cell'><img src='images/H.png'/></td>
+      <td class='cell'><img src='images/T.png'/></td>
+      <td class='cell'><img src='images/S.png'/></td>
+      <td class='cell'><img src='images/F.png'/></td>
+      <td class='cell'><img src='images/I.png'/></td>
+      <td class='cell'><img src='images/E.png'/></td>
+   </tr>
+   <tr>
+      <td class='cell'><img src='images/Y.png'/></td>
+      <td class='cell'><img src='images/U.png'/></td>
+      <td class='cell'><img src='images/M.png'/></td>
+      <td class='cell'><img src='images/T.png'/></td>
+      <td class='cell'><img src='images/D.png'/></td>
+      <td class='cell'><img src='images/R.png'/></td>
+      <td class='cell'><img src='images/O.png'/></td>
+      <td class='cell'><img src='images/K.png'/></td>
+      <td class='cell'><img src='images/D.png'/></td>
+      <td class='cell'><img src='images/Z.png'/></td>
+      <td class='cell'><img src='images/O.png'/></td>
+      <td class='cell'><img src='images/W.png'/></td>
+      <td class='cell'><img src='images/L.png'/></td>
+      <td class='cell'><img src='images/W.png'/></td>
+      <td class='cell'><img src='images/R.png'/></td>
+   </tr>
+   <tr>
+      <td class='cell'><img src='images/M.png'/></td>
+      <td class='cell'><img src='images/O.png'/></td>
+      <td class='cell'><img src='images/A.png'/></td>
+      <td class='cell'><img src='images/M.png'/></td>
+      <td class='cell'><img src='images/V.png'/></td>
+      <td class='cell'><img src='images/B.png'/></td>
+      <td class='cell'><img src='images/E.png'/></td>
+      <td class='cell'><img src='images/R.png'/></td>
+      <td class='cell'><img src='images/E.png'/></td>
+      <td class='cell'><img src='images/W.png'/></td>
+      <td class='cell'><img src='images/V.png'/></td>
+      <td class='cell'><img src='images/T.png'/></td>
+      <td class='cell'><img src='images/V.png'/></td>
+      <td class='cell'><img src='images/K.png'/></td>
+      <td class='cell'><img src='images/W.png'/></td>
+   </tr>
+</table>
+<table class='grid'>
+   <tr>
+      <td>ball<input class='check' type='checkbox'/></td>
+      <td>umpire<input class='check' type='checkbox'/></td>
+      <td>wicket<input class='check' type='checkbox'/></td>
+      <td>run<input class='check' type='checkbox'/></td>
+      <td>googly<input class='check' type='checkbox'/></td>
+   </tr>
+   <tr>
+      <td>six<input class='check' type='checkbox'/></td>
+      <td>four<input class='check' type='checkbox'/></td>
+      <td>yorker<input class='check' type='checkbox'/></td>
+</table>
+</body>
+</html>

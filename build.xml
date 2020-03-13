@@ -1,0 +1,60 @@
+<project name="HelloWorld" default="Main">
+
+	<taskdef resource="net/sf/antcontrib/antcontrib.properties">
+		<classpath>
+			<pathelement location="${basedir}/lib/ant-contrib/ant-contrib-1.0b3.jar" />
+		</classpath>
+	</taskdef>
+
+	<target name="Main" depends="Build">
+	</target>
+
+	<target name="Build" depends="Compile">
+
+		<delete file="WordPuzzle.jar" failonerror="false" />
+
+		<jar destfile="WordPuzzle.jar">
+
+			<fileset dir="${dir.classes}" includes="**/*.class" />
+			<fileset dir="${dir.source}"  includes="**/*.class" />
+			<fileset dir="${basedir}"     includes="lib/**/*.jar" />
+			
+			<manifest>
+				<attribute name="Main-Class" value="com.maga.wpuzz.WordPuzzle" />
+				<attribute name="Class-Path" value="${manifest.path}" />
+			</manifest>
+
+		</jar>
+	</target>
+
+	<target name="Compile" depends="Properties">
+		<javac srcdir="${dir.source}" destdir="${dir.classes}" includes="**/*.java">
+			<classpath>
+				<path refid="classpath" />
+			</classpath>
+		</javac>
+	</target>
+
+	<target name="Properties">
+
+		<property name="dir.source" value="${basedir}/src" />
+		<property name="dir.classes" value="${basedir}/classes" />
+		<property name="dir.lib" value="${basedir}/lib" />
+		<property name="dir.lib.antcontrib" value="${dir.lib}/ant-contrib" />
+		<property name="dir.lib.commons" value="${dir.lib}/apache-commons" />
+
+		<mkdir dir="${basedir}/classes" />
+
+		<path id="classpath">
+			<pathelement location="${dir.classes}" />
+			<fileset dir="${dir.lib.antcontrib}" includes="*.jar" />
+			<fileset dir="${dir.lib.commons}" includes="*.jar" />
+		</path>
+
+		<manifestclasspath property="manifest.path" jarfile="WordPuzzle.jar">
+			<classpath refid="classpath" />
+		</manifestclasspath>
+
+	</target>
+
+</project>
