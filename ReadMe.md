@@ -1,5 +1,5 @@
 # Introduction
-A Word Puzzle is a Java tool to generate a HTML page having (m x n) matrix of images. Each image is an alphabet in ISL (Indian Sign Language). The matrix has words (provided as input for puzzle generation) are spread accross horizontally, vertically and diagonally. Print out the HTML, pick up a pencil and highlight the words the old fashioned way! 
+A Word Puzzle is a Java tool to generate a HTML page having (m x n) matrix of images. Each image is an alphabet in ISL (Indian Sign Language). The matrix has words (provided as input for puzzle generation) are spread across horizontally, vertically and diagonally. Print out the HTML, pick up a pencil and highlight the words the old fashioned way! 
 
 # Sample Puzzle
 ![ISL](https://raw.githubusercontent.com/cafeduke/WordPuzzle/master/resources/ISL.jpg)
